@@ -7,32 +7,38 @@ import {
   Text,
   useColorScheme,
   View,
+  Image,
 } from 'react-native';
 
 // utilities
 import Constants from '../utils/Constants';
+import LeftHeader from './LeftHeader';
+import Cart from './Cart';
 
 const InteriorContainer = props => {
   return (
     <View style={styles.intCont}>
-      <Text style={styles.text}>{props.testText}</Text>
+      {/* Place the icon logo */}
+      {props.col === 'left' ? (
+        <>
+          <LeftHeader />
+          <Cart />
+        </>
+      ) : null}
     </View>
   );
 };
 
 const styles = StyleSheet.create({
-  extCont: {
-    flex: 1,
-    flexDirection: 'row',
-    backgroundColor: '#fff',
-  },
   intCont: {
     flex: 1,
     backgroundColor: Constants.BACKGROUND_COLOR,
-    justifyContent: 'center',
+    // justifyContent: 'center',
+    borderWidth: 1,
   },
   text: {
     textAlign: 'center',
+    fontFamily: 'SourceCodePro-Bold',
   },
 });
 

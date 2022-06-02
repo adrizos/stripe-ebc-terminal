@@ -9,27 +9,23 @@ import {
   View,
 } from 'react-native';
 
-// custom components
-import ProductLineItem from './ProductLineItem';
-
 // utilities
 import Constants from '../utils/Constants';
 
-const Cart = props => {
+const ProductLineItem = props => {
   return (
-    <View style={styles.cart}>
-      <Text>This is a cart.</Text>
-      <ProductLineItem />
-    </View>
+    <ScrollView style={styles.cart}>
+      <Text>This is product</Text>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   cart: {
-    height: '75%',
-    backgroundColor: 'pink',
+    height: '60%',
+    backgroundColor: 'white',
     margin: 50,
   },
 });
 
-export default Cart;
+export default ProductLineItem;
