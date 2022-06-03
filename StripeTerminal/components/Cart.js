@@ -10,7 +10,8 @@ import {
 } from 'react-native';
 
 // custom components
-import ProductLineItem from './ProductLineItem';
+import Products from './Products';
+import Totals from './Totals';
 
 // utilities
 import Constants from '../utils/Constants';
@@ -19,7 +20,8 @@ const Cart = props => {
   return (
     <View style={styles.cart}>
       <Text>This is a cart.</Text>
-      <ProductLineItem />
+      <Products />
+      <Totals />
     </View>
   );
 };
@@ -27,8 +29,9 @@ const Cart = props => {
 const styles = StyleSheet.create({
   cart: {
     height: '75%',
-    backgroundColor: 'pink',
+    backgroundColor: '#FEC8A7',
     margin: 50,
+    marginTop: 75,
   },
 });
 
