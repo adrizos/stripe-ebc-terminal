@@ -14,8 +14,9 @@ import {
 import Constants from '../utils/Constants';
 import LeftHeader from './LeftHeader';
 import Cart from './Cart';
+import DeliverySelection from './DeliverySelection';
 
-const InteriorContainer = props => {
+const HalfScrCont = props => {
   return (
     <View style={styles.intCont}>
       {/* Place the icon logo */}
@@ -24,7 +25,9 @@ const InteriorContainer = props => {
           <LeftHeader />
           <Cart />
         </>
-      ) : null}
+      ) : (
+        <DeliverySelection />
+      )}
     </View>
   );
 };
@@ -34,7 +37,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: Constants.BACKGROUND_COLOR,
     // justifyContent: 'center',
-    borderWidth: 1,
+    borderWidth: 0.5,
+    borderColor: Constants.DARK_GRAY,
   },
   text: {
     textAlign: 'center',
@@ -42,4 +46,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default InteriorContainer;
+export default HalfScrCont;

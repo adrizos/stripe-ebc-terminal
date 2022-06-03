@@ -19,7 +19,6 @@ import Constants from '../utils/Constants';
 const Cart = props => {
   return (
     <View style={styles.cart}>
-      <Text>This is a cart.</Text>
       <Products />
       <Totals />
     </View>
@@ -29,7 +28,7 @@ const Cart = props => {
 const styles = StyleSheet.create({
   cart: {
     height: '75%',
-    backgroundColor: '#FEC8A7',
+    // backgroundColor: '#FEC8A7',
     margin: 50,
     marginTop: 75,
   },

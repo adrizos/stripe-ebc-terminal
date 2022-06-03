@@ -30,10 +30,10 @@ const Totals = props => {
 const styles = StyleSheet.create({
   totalsContainer: {
     height: '30%',
-    backgroundColor: '#CBC7FC',
+    // backgroundColor: '#CBC7FC',
     marginLeft: 110,
     marginRight: 50,
-    marginTop: 5,
+    marginTop: 25,
     marginBottom: 50,
   },
   line: {

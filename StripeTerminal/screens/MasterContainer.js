@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 
 // custom components
-import InteriorContainer from '../components/InteriorContainer';
+import HalfScrCont from '../components/HalfScrCont';
 
 // utilities
 import Constants from '../utils/Constants';
@@ -19,8 +19,8 @@ import Constants from '../utils/Constants';
 const MasterContainer = () => {
   return (
     <View style={styles.extCont}>
-      <InteriorContainer testText="left" col="left" />
-      <InteriorContainer testText="right" col="right" />
+      <HalfScrCont testText="left" col="left" />
+      <HalfScrCont testText="right" col="right" />
     </View>
   );
 };
