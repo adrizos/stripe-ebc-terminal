@@ -19,7 +19,6 @@ import Constants from '../utils/Constants';
 const Cart = props => {
   return (
     <View style={styles.cart}>
-      <Text>This is a cart.</Text>
       <Products />
       <Totals />
     </View>
