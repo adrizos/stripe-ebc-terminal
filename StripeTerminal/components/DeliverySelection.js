@@ -26,17 +26,19 @@ const styles = StyleSheet.create({
   masterCont: {
     width: '80%',
     height: '80%',
-    justifyContent: 'space-evenly',
+    justifyContent: 'center',
     alignItems: 'stretch',
     marginLeft: 50,
+    marginTop: 100,
   },
   selectionCont: {
-    // marginTop: 50,
-    // marginLeft: 50,
+    marginTop: 50,
+    marginBottom: 50,
   },
   selectionTxt: {
     fontFamily: 'SourceCodePro-Regular',
-    fontSize: 20,
+    fontSize: 25,
+    marginBottom: 10,
   },
   header: {
     fontFamily: 'SourceCodePro-Bold',

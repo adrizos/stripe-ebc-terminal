@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
     backgroundColor: Constants.BACKGROUND_COLOR,
     // justifyContent: 'center',
     borderWidth: 0.5,
+    borderColor: Constants.DARK_GRAY,
   },
   text: {
     textAlign: 'center',

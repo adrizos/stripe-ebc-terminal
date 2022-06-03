@@ -100,7 +100,7 @@ const Products = props => {
 const styles = StyleSheet.create({
   scrollContainer: {
     height: '50%',
-    backgroundColor: '#FCECA5',
+    // backgroundColor: '#FCECA5',
     margin: 50,
     marginBottom: 15,
   },
